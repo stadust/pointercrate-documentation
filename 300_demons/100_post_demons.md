@@ -2,7 +2,7 @@
 
 # Adding demons
 
-## `POST`{.verb} `/demons/`
+## `POST`{.verb} `/api/v2/demons/`
 
 <div class='info-yellow'>
 <b>Access Restrictions:</b><br>

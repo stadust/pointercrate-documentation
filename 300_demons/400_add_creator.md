@@ -2,7 +2,7 @@
 
 # Adding creators
 
-## `POST`{.verb} `/v1/demons/` `id`{.param} `/creators/`
+## `POST`{.verb} `/v2/demons/` `id`{.param} `/creators/`
 
 <div class='info-yellow'>
 <b>Access Restrictions:</b><br>
