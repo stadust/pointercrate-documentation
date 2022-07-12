@@ -9,7 +9,7 @@
 This endpoint is ratelimited at 3 requests per 30 minutes
 </div>
 
-Logs into an existing pointercrate user account, providing an acccess token upon success.
+Logs into an existing pointercrate user account, providing an access token upon success.
 
 ### Request:
 

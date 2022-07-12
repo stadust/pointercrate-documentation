@@ -1,6 +1,6 @@
 <div class='panel fade js-scroll-anim' data-anim='fade'>
 
-# User listing
+# User listing{id=get-users}
 
 ## `GET`{.verb} `/users/`
 

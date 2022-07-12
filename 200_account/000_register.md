@@ -13,11 +13,15 @@ This endpoint is ratelimited at 1 successful request per day and at 5 failed req
 
 Registers a new pointercrate account.
 
-When registering, you only choose your username and your password. Your chosen username must be at least `3` spaces long and may not contain leading or trailing spaces. Your chosen password must be at least `10` characters long and has no further restrictions imposed.
+When registering, you only choose your username and your password. Your chosen username must be at least `3` spaces long
+and may not contain leading or trailing spaces. Your chosen password must be at least `10` characters long and has no
+further restrictions imposed.
 
-The username isn't changable afterward, but you can set your `display_name` to nearly any value you want via [`PATCH /auth/me/`](#patch-me).
+The username isn't changeable afterward, but you can set your `display_name` to nearly any value you want
+via [`PATCH /auth/me/`](#patch-me).
 
-Registering for an account does not provide an access token, it needs to be aquired by using the [login](#login) endpoint.
+Registering for an account does not provide an access token, it needs to be acquired by using the [login](#login)
+endpoint.
 
 ### Request
 
@@ -36,7 +40,7 @@ Registering for an account does not provide an access token, it needs to be aqui
 | ------------ | ---------------------------------------- |
 | Content-Type | `application/json`                       |
 | Location     | `/auth/me/`                              |
-| ETag         | unsigned 64 bit hash of your user object |
+| ETag         | hash of your user object |
 
 | Field | Type                                 | Description                                              |
 | ----- | ------------------------------------ | -------------------------------------------------------- |
@@ -58,8 +62,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "name": "stadust",
-    "password": "password123"
+"name": "stadust",
+"password": "password123"
 }
 ```
 
