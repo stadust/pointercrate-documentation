@@ -25,7 +25,7 @@ Additionally, the endpoint uses its own special format for [Player](/documentati
 
 ### Filtering:
 
-The result can be filtered by `nationality` (both by country code and country name) and by `name_contains`, which causes the endpoint to only return players whose name contains the given substring.
+The result can be filtered by `nation` (both by country code and country name) and by `name_contains`, which causes the endpoint to only return players whose name contains the given substring.
 
 Since none of the fields have the characteristics required of a pagination field (results aren't sorted by `id`, `score` is a floating point value and `rank` is not unique), pagination is done via a pseudo-field that is not contained in the response.
 

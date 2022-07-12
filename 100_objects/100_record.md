@@ -9,8 +9,8 @@ Each record on the list is represented by a `Record` object. The following invar
 - Every combination of `demon`, `player` and `status` values is unique
 - Every `video` value is in one of the formats listed [here](/documentation/#video), or `null`
 
-The object only contains the submitter information if the requestee has `ListModerator` permissions. The object only contains the notes if the requestee has `ListHelper` permissions.
-Requests without `ExtendedAccess` permissions can only retrieve approved records.
+The object only contains the submitter information if the requestee has `ListModerator` permissions. The object only contains the notes if the requester has `ListHelper` permissions.
+Requests without `ListHelper` permissions can only retrieve approved records.
 
 ## Minimal Form
 
