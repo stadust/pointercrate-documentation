@@ -8,13 +8,28 @@ Object representing some nation
 | ------------ | ------ | --------------------------------------------------------------- |
 | nation       | string | The nation's name                                               |
 | country_code | string | The nation's ISO country code. Always exactly 2 characters long |
+| subdivision | Subdivision? | An optional entry specifying a state within the country | 
 
-## Example objects
+## Subdivision objects 
+
+Object representing some state with in a nation
+
+| Field        | Type   | Description                                                     |
+| ------------ | ------ | --------------------------------------------------------------- |
+| name       | string | The states's name                                               |
+| iso_code | string | The nation's ISO country code. Not always 2 characters long (e.g. for Australia's subdivisions it's three) |
+
+
+## Example object
 
 ```json
 {
-  "nation": "Germany",
-  "country_code": "DE"
+  "nation": "United States",
+  "country_code": "US",
+  "subdivision": {
+    "iso_code": "OH",
+    "name": "Ohio"
+  }
 }
 ```
 
