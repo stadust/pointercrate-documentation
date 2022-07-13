@@ -33,7 +33,9 @@ The `video` value, if provided, must meet the requirements specified [here](/doc
 | status   | [RecordStatus](/documentation/objects/#record-status) | The status the newly record should have, defaults to `SUBMITTED` | true     |
 | check    | boolean                                               | _deprecated_                                                     | true     |
 
-### Response: `201 CREATED`
+### Response: `200 OK`
+
+Note how we do not use `201 CREATED` here as the submission of the record is not guaranteed: Some validity checks are deferred and might result in the submission being auto-deleted after the `200 OK` response was sent.
 
 | Header       | Value                                            |
 | ------------ | ------------------------------------------------ |
@@ -44,10 +46,6 @@ The `video` value, if provided, must meet the requirements specified [here](/doc
 | Field | Type                                     | Description                     |
 | ----- | ---------------------------------------- | ------------------------------- |
 | data  | [Record](/documentation/objects/#record) | The newly created record object |
-
-### Response: `204 NO RESPONSE`
-
-When `check` is set to `true`, and the record passed all internal validation, meaning it can be submitted.
 
 ### Errors:
 
