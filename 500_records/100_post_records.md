@@ -55,7 +55,7 @@ Note how we do not use `201 CREATED` here as the submission of the record is not
 | 404         | 40401      | The provided demon does not exist                                       |
 | 422         | 42218      | The record holder is banned                                             |
 | 422         | 42219      | The demon is on the legacy list                                         |
-| 422         | 42215      | The record does not meat the demons requirement                         |
+| 422         | 42215      | The record does not meet the demons requirement                         |
 | 422         | 42220      | The demon is on the extended list but the record's progress isn't `100` |
 | 422         | 42217      | The record has already been approved/rejected/submitted/approved        |
 
