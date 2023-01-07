@@ -23,7 +23,7 @@ _Nothing_
 ### Example request
 
 ```json
-DELETE /appi/v1/auth/me/
+DELETE /api/v1/auth/me/
 Accept: application/json
 Authorization: Basic <omitted>
 If-Match: 10434480491831244259
