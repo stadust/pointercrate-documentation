@@ -4,6 +4,11 @@
 
 ## `PATCH`{.verb} `/auth/me/`
 
+<div class='info-yellow'>
+<b>Rate Limits:</b><br>
+Email address updates are limited to one attempt every month.
+</div>
+
 Modifies the currently logged in account (that is, the account whose credentials are sent).
 
 Note that after updating your password, you will have to [log in](#login) again, as changing passwords invalidates access tokens.
@@ -24,6 +29,7 @@ other people at least cannot change your password, allowing you to invalidate th
 | password        | string | Set to update your password                                                   | true     |
 | display_name    | string | Set to update your diplay name. Set to `null` to reset it                     | true     |
 | youtube_channel | string | Set to update the link to your youtube channel displayed along with your name | true     |
+| email_address | string | Set to initiate an email address change. Set to `null` to reset it | true     |
 
 ### Response: `200 OK` or `204 NO CONTENT`
 
