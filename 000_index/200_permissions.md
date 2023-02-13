@@ -19,13 +19,13 @@ The following permissions exist. If a permissions `A` implies some other permiss
 
 If a permission `A` assigns some other permission `B` then a user with permission `A` can modify the bit for permission `B` via [`PATCH /users/user_id/`](/documentation/users/#patch-user) of users he has access to. 
 
-| Permission           | Bit    | Description                                                                                                                                            | Implies | Assigns |
-| -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `LIST_HELPER`        | 0x2    | Users that help out in managing the demonlist by reviewing records                                                                                     | None | None |
-| `LIST_MODERATOR`     | 0x4    | Users that moderate the demonlist and manage the demon placements                                                                                      | `LIST_HELPER` | None |
-| `LIST_ADMINISTRATOR` | 0x8    | Users that administrate the demonlist | `LIST_MODERATOR` | `LIST_HELPER`, `LIST_MODERATOR` |
-| `MODERATOR`          | 0x2000 | Users that have access to the pointercrate user list                                                                                                   | None | None |
-| `ADMINISTRATOR`      | 0x4000 | Users that can manage other users, including granting them permissions                                                                                 | `MODERATOR` | `LIST_ADMINISTRATOR`, `LIST_HELPER` |
+| Permission           | Bit    | Description                                                                                                                                            | Implies          | Assigns |
+| -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ------- |
+| `LIST_HELPER`        | 0x2    | Users that help out in managing the demonlist by reviewing records                                                                                     | None             | None |
+| `LIST_MODERATOR`     | 0x4    | Users that moderate the demonlist and manage the demon placements                                                                                      | `LIST_HELPER`    | None |
+| `LIST_ADMINISTRATOR` | 0x8    | Users that administrate the demonlist                                                                                                                  | `LIST_MODERATOR` | `LIST_HELPER`, `LIST_MODERATOR` |
+| `MODERATOR`          | 0x2000 | Users that have access to the pointercrate user list                                                                                                   | None             | None |
+| `ADMINISTRATOR`      | 0x4000 | Users that can manage other users, including granting them permissions                                                                                 | `MODERATOR`      | `LIST_ADMINISTRATOR`, `LIST_HELPER` |
 
 ### Errors
 
