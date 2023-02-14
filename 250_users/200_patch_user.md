@@ -28,7 +28,7 @@ Also note that you cannot grant (or revoke) other users `Administrator` permissi
 | Field           | Type    | Description                          | Optional |
 | --------------- | ------- | ------------------------------------ | -------- |
 | display_name    | string  | Set to update the users display name | true     |
-| youtube_channel | string  | Set to update the link to your youtube channel displayed along with your name | true     |
+| youtube_channel | string  | Set to update the users YouTube channel link | true     |
 | permissions     | bitmask | Set to update the users permissions  | true     |
 
 ### Response: `200 OK`
