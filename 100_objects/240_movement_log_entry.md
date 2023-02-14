@@ -24,24 +24,24 @@ It's probably more clear to look at the examples.
 
 ```json
 {
-		"reason": "Added",
-		"time": "2018-05-21T12:00:00",
-		"new_position": 40
+    "reason": "Added",
+    "time": "2018-05-21T12:00:00",
+    "new_position": 40
 }
 ```
 
 ```json
 {
-		"reason": {
-				"OtherAddedAbove": {
-						"other": {
-										"id": 242,
-										"name": "SPEEDRUN"
-								}
-						}
-				},
-		"time":"2020-01-02T22:45:51.013683",
-		"new_position": 41
+    "reason": {
+        "OtherAddedAbove": {
+            "other": {
+                    "id": 242,
+                    "name": "SPEEDRUN"
+                }
+            }
+        },
+    "time":"2020-01-02T22:45:51.013683",
+    "new_position": 41
 }
 ```
 
