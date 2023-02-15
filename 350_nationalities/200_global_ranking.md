@@ -20,16 +20,6 @@ Object representing the ranking data for some nation
 | score       | double  | Combined score of all players in this nation |
 | nationality | [Nationality](/documentation/objects#nationality) | Combined score of all players in this nation |
 
-
-```rs
-pub struct RankedNation {
-    pub rank: i64,
-    pub score: f64,
-    #[serde(flatten)]
-    pub nationality: Nationality,
-}
-```
-
 ### Request
 
 _No data or headers required_
