@@ -12,7 +12,7 @@ Represents some user-initiated mutation event for an object.
 | user         | [NamedId](#named-id) | Identifier of user that made the change |
 | type         | AuditLogEntryType    | May contain a string or an object. See below. |
 
-## Audit log entry
+## Audit log entry type
 
 May be a string of "Addition" or "Deletion" or an object with key "Modification". What this object contains depends on the endpoint you are accessing.
 
