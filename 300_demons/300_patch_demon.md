@@ -28,6 +28,7 @@ The `video` value, if provided, must meet the requirements specified [here](/doc
 | name        | string  | Set to update the name of the demon                             | true     |
 | position    | integer | Set to update the position of the demon                         | true     |
 | video       | string  | Set to update the verification video                            | true     |
+| thumbnail   | string  | Set to update the thumbnail                                     | true     |
 | requirement | integer | Set to update the record requirement                            | true     |
 | verifier    | string  | Set to update the verifier. Needs to be the name of the player  | true     |
 | publisher   | string  | Set to update the publisher. Needs to be the name of the player | true     |
