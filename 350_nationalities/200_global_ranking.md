@@ -4,21 +4,19 @@
 
 ## `GET`{.verb} `/nationalities/ranking`
 
-### Filtering:
-
-The result can be filtered by any of the following fields: `continent`, `name_contains`.
+Returns a list of objects that combines all player profiles in one country and sorts by the total score.
 
 The endpoint uses a custom object to represent a ranked nation.
-
-## Ranked nation objects
-
-Object representing the ranking data for some nation
 
 | Field       | Type    | Description |
 | ----------- | ------- | ----------- |
 | rank        | integer | Overall rank of this nation. This is not affected by any filters |
 | score       | double  | Combined score of all players in this nation |
 | nationality | [Nationality](/documentation/objects#nationality) | Combined score of all players in this nation |
+
+### Filtering:
+
+The result can be filtered by any of the following fields: `continent`, `name_contains`.
 
 ### Request
 
@@ -32,7 +30,7 @@ _No data or headers required_
 
 | Field | Type               | Description |
 | ----- | ------------------ | ----------- |
-| -     | List[RankedNation] | List of all ranked nations, sorted by score. |
+| -     | List[RankedNation] | List of all ranked nations, sorted by score. See above for format. |
 
 ### Example request
 
