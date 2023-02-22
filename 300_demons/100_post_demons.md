@@ -5,6 +5,11 @@
 ## `POST`{.verb} `/api/v2/demons/`
 
 <div class='info-yellow'>
+<b>Rate Limits:</b><br>
+This endpoint is ratelimited at 1 request per minute
+</div>
+
+<div class='info-yellow'>
 <b>Access Restrictions:</b><br>
 Access to this endpoint requires at least `LIST_MODERATOR` permissions.
 </div>
