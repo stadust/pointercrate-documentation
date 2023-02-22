@@ -25,9 +25,19 @@ All fields in this object contain null unless the audit log entry modifies this 
 | name         | string?               | Name of demon after modification |
 | position     | number?               | Position of demon after modification |
 | requirement  | string?               | Requirement of demon after modification |
-| video        | number?               | Video of demon after modification |
+| video        | string?               | Video of demon after modification |
 | verifier     | [NamedId?](#named-id) | Identifier of verifier for demon after modification |
 | published    | [NamedId?](#named-id) | Identifier of published for demon after modification |
+
+### Record modification data
+
+| Field    | Type                            | Description |
+| -------- | ------------------------------- | ----------- |
+| progress | integer?                        | Progress of record after modification |
+| video    | string?                         | Video of record after modification |
+| status   | [RecordStatus?](#record-status) | Status of record after modification |
+| player   | [NamedId?](#named-id)           | Name and id of record's holder after modification |
+| demon    | [NamedId?](#named-id)           | Name and id of record's demon after modification |
 
 ## Example objects
 
