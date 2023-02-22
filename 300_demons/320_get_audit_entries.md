@@ -1,6 +1,6 @@
 <div class='panel fade js-scroll-anim' data-anim='fade' style="position: relative">
 
-# List ranked demons
+# List demon audit entries
 
 ## `GET`{.verb} `/v2/demons/` `id`{.param} `/audit`
 
