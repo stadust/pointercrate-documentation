@@ -21,6 +21,8 @@ Adds a note to the specified record.
 | Field       | Type         | Description                            | Optional |
 | ----------- | ------------ | -------------------------------------- | -------- |
 | content        | string       | The content of the new note                  | false    |
+| is_public      | boolean       | If this note should be visible to the record submitter | true |
+
 
 ### Response: `201 CREATED`
 

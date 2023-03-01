@@ -20,7 +20,8 @@ Modifies the specified note's content
 
 | Field       | Type         | Description                            | Optional |
 | ----------- | ------------ | -------------------------------------- | -------- |
-| content        | string       | The new content of the  note                  | false    |
+| content        | string       | The new content of the  note                  | true    |
+| is_public      | boolean       | If this note should be visible to the record submitter | true |
 
 ### Response: `200 OK`
 
