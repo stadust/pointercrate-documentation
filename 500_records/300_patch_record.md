@@ -26,7 +26,7 @@ Modifies a given record.
 | status   | [RecordStatus](#record-status) | Set to update the record's status                                                 | true     |
 | player   | string                         | Set to update the record holder. Needs to be the name of the player               | true     |
 | demon    | string                         | Set to update the demon the record was made on. Needs to be the name of the demon | true     |
-| notes    | string                         | Set to update the record's notes                                                  | true     |
+| demon_id | integer                        | Set to update the demon the record was made on. Needs to be the id of the demon. This field conflicts with `demon`. | true     |
 
 ### Response: `200 OK`
 
@@ -57,9 +57,10 @@ Returned when the `PATCH` operation did not make any changes.
 | 404         | 40401      | The updated value for demon does not exist                                                                      |
 | 412         | 41200      | The value provided in the `If-Match` header doesn't match the current state of the object                       |
 | 418         | 41800      | No `If-Match` header was provided                                                                               |
-| 422         | 42215      | The updated progress value does not meat the demons requirement                                                 |
+| 422         | 42215      | The updated progress value does not meet the demons requirement                                                 |
 | 422         | 42216      | The update status value is not a valid member of the [RecordStatus](/documentation/objects/#record-status) enum |
 | 422         | 42221      | The record holder is banned and you tried to set the record status to `APPROVED`                                |
+| 422         | 42229      | Your request body tries to simultaneously use mutually exclusive fields (e.g. `demon_id` together with `demon`) |
 
 ### Example request
 
@@ -72,7 +73,6 @@ If-Match: VV4v4HlCVToXCSqxdpaV3IQGRLw=
 
 {
     "status": "approved",
-    "notes": "Record made on approved low-detail copyable"
 }
 ```
 
