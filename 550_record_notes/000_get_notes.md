@@ -8,7 +8,7 @@
 
 <div class='info-yellow'>
 <b>Access Restrictions:</b><br>
-Unless the user accessing the notes for this record owns the player associated with it, access to this endpoint requires at least `LIST_HELPER` permissions.
+Unless the user accessing the notes for this record has a verified claim on the player associated with it, access to this endpoint requires at least `LIST_HELPER` permissions.
 </div>
 
 

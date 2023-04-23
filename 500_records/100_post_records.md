@@ -11,7 +11,7 @@ This endpoint is ratelimited at 3 successfully submitted records per 20 minutes 
 
 <div class='info-yellow'>
 <b>Access Restrictions:</b><br>
-Unless you set `status` to `SUBMITTED` (or omit the field), access to this endpoint requires at least `LIST_HELPER` permissions. The `raw_footage` field is required unless the `status` field is _not_ `SUBMITTED`.
+Unless you set `status` to `SUBMITTED` (or omit the field), access to this endpoint requires at least `LIST_HELPER` permissions. The `raw_footage` field is required unless the submitter has at least `LIST_HELPER` permissions.
 </div>
 
 Either adds a record directly to the list, or submits a record to the list mods for approval. The record must meet the demons requirement, and the holder in question needn't be banned.
