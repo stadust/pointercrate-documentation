@@ -9,6 +9,7 @@ Users with `ListHelper` and up permissions can comment on records by leaving rec
 |id|int|The internal ID of this note|
 | author       | string? | The author's username (see [User](#user)). Is `null` if the note was left by the submitter                                               |
 | content | string | The comment left |
+| is_public | boolean | If the note should be shown to the record owner |
 | editors | List[string] | The usernames of everyone who edited this note, in order of edits|
 |transferred| boolean| Value indicating whether this note was originally left on a different record, but later transferred to the current one due to internal record merging |
 

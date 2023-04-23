@@ -9,8 +9,8 @@
 Access to this endpoint requires at least `LIST_ADMIN` permissions.
 </div>
 
-Deletes the record with the given ID. This action is irrevesible. Note that if you
-simply wans to reject a submission, you should use [`PATCH /records/record_id/`](#patch-record) and change its status to `REJECTED`
+Deletes the record with the given ID. This action is irreversible. Note that if you
+simply want to reject a submission, you should use [`PATCH /records/record_id/`](#patch-record) and change its status to `REJECTED`
 to ensure it isn't submitted again.
 
 ### Request:

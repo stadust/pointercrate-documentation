@@ -13,14 +13,15 @@ Modifies the specified note's content
 
 ### Request:
 
-| Header       | Expected Value     | Optional |
-| ------------ | ------------------ | -------- |
-| Content-Type | `application/json` | false    |
-| Authorization | [Pointercrate access token](/documentation/#access-tokens)                                 | false    |
+| Header        | Expected Value     | Optional |
+| ------------- | ------------------ | -------- |
+| Content-Type  | `application/json` | false    |
+| Authorization | [Pointercrate access token](/documentation/#access-tokens) | false    |
 
-| Field       | Type         | Description                            | Optional |
-| ----------- | ------------ | -------------------------------------- | -------- |
-| content        | string       | The new content of the  note                  | false    |
+| Field       | Type         | Description                                            | Optional |
+| ----------- | ------------ | ------------------------------------------------------ | -------- |
+| content     | string       | The new content of the note                            | true     |
+| is_public   | boolean      | If this note should be visible to the record submitter | true     |
 
 ### Response: `200 OK`
 

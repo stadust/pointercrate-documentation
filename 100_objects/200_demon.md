@@ -33,6 +33,7 @@ When retrieving demons via [`GET /demons/`](/documentation/demons/#get-demons), 
 | publisher | [Player](#player) | The player that published this demon                                                      |
 | verifier  | [Player](#player) | The player that verified this demon                                                       |
 | video     | URL?              | The verification video                                                                    |
+| thumbnail     | string              | URL to the thumbnail for the Demon's verification video                                                                    |
 | level_id  | integer?          | The level ID of this demon on the Geometry Dash servers. |
 
 ## Full Form
@@ -46,6 +47,7 @@ The listed record objects do not contain the current demon embedded into the `de
 | id          | integer                 | The demons internal ID (has nothing to do with its level ID on the geometry dash servers) |
 | requirement | integer                 | The minimum percentage a record on this demon has to be, to be accepted                   |
 | video       | URL?                    | The verification video.                                                                   |
+| thumbnail     | string              | URL to the thumbnail for the Demon's verification video                                                                    |
 | level_id  | integer?          | The level ID of this demon on the Geometry Dash servers. |
 | verifier    | [Player](#player)       | The demon's verifier                                                                      |
 | publisher   | [Player](#player)       | The demon's publisher                                                                     |
@@ -80,6 +82,7 @@ The listed record objects do not contain the current demon embedded into the `de
     "id": 3,
     "name": "Sunix"
   },
+  "thumbnail": "https://i.ytimg.com/vi/cHEGAqOgddA/mqdefault.jpg",
   "video": "https://www.youtube.com/watch?v=cHEGAqOgddA"
 }
 ```
@@ -109,6 +112,7 @@ The listed record objects do not contain the current demon embedded into the `de
     "id": 3,
     "name": "Sunix"
   },
+  "thumbnail": "https://i.ytimg.com/vi/cHEGAqOgddA/mqdefault.jpg",
   "video": "https://www.youtube.com/watch?v=cHEGAqOgddA"
 }
 ```

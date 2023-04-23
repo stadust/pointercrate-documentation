@@ -25,10 +25,11 @@ Also note that you cannot grant (or revoke) other users `Administrator` permissi
 | Authorization | [Pointercrate access token](/documentation/#access-tokens)                               | false    |
 | If-Match      | Conditional request header. Needs to be set to the current etag value of the user object | false    |
 
-| Field        | Type    | Description                          | Optional |
-| ------------ | ------- | ------------------------------------ | -------- |
-| display_name | string  | Set to update the users display name | true     |
-| permissions  | bitmask | Set to update the users permissions  | true     |
+| Field           | Type    | Description                          | Optional |
+| --------------- | ------- | ------------------------------------ | -------- |
+| display_name    | string  | Set to update the users display name | true     |
+| youtube_channel | string  | Set to update the users YouTube channel link | true     |
+| permissions     | bitmask | Set to update the users permissions  | true     |
 
 ### Response: `200 OK`
 
@@ -51,9 +52,10 @@ Returned when the `PATCH` operation did not make any changes.
 
 ### Errors:
 
-| Status code | Error code | Description                                                                              |
-| ----------- | ---------- | ----------------------------------------------------------------------------------------|
-|403|40303| Attempt to patch your own account through this endpoint|
+| Status code | Error code | Description                                             |
+| ----------- | ---------- | ------------------------------------------------------- |
+| 403         | 40303      | Attempt to patch your own account through this endpoint |
+| 403         | 40305      | Attempt to add permissions that you cannot assign       |
 
 ### Example request:
 
