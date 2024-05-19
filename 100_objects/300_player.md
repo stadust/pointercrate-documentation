@@ -28,6 +28,7 @@ When retrieving players via [`GET /players/`](/documentation/players/#get-player
 | name        | string                      | The player's name                             |
 | banned      | boolean                     | Value indicating whether the player is banned |
 | nationality | [Nationality](#nationality) | The player's nationality, if set              |
+| score       | float                       | The player's stats viewer score               |
 
 ## Full Form
 
@@ -39,6 +40,7 @@ The listed record objects do not contain the current player embedded into the `p
 | name        | string                      | The player's name                             |
 | banned      | boolean                     | Value indicating whether the player is banned |
 | nationality | [Nationality](#nationality) | The player's nationality, if set              |
+| score       | float                       | The player's stats viewer score               |
 | created     | List[[Demon](#demon)]       | A list of demons the player created           |
 | records     | List[[Record](#record)]     | A list of records the player has on the list  |
 | published   | List[[Demon](#demon)]       | A list of demons the player has published     |
@@ -66,7 +68,8 @@ The listed record objects do not contain the current player embedded into the `p
   "nationality": {
     "nation": "Andorra",
     "country_code": "AD"
-  }
+  },
+  "score": 0
 }
 ```
 
@@ -96,6 +99,7 @@ The listed record objects do not contain the current player embedded into the `p
       "position": 34
     }
   ],
+  "score": 0,
   "verified": []
 }
 ```
