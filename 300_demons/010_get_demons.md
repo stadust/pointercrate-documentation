@@ -16,7 +16,7 @@ Retrieves a, potentially filtered, list of every demon in the pointercrate datab
 
 ### Filtering:
 
-The result can be filtered by any of the following fields: `name`, `name_contains`, `requirement`, `verifier.id` (via `verifier_id`), `publisher.id` (via `publisher_id`), `verifier.name` (via `verifier_name`), `publisher.name` (via `publisher.name`). To filter by creator, please use
+The result can be filtered by any of the following fields: `name`, `name_contains`, `requirement`, `verifier.id` (via `verifier_id`), `publisher.id` (via `publisher_id`), `verifier.name` (via `verifier_name`), `publisher.name` (via `publisher.name`), and `level_id`. To filter by creator, please use
 [`GET /players/player_id/`](/documentation/players/#get-player) and inspect the relevant fields of the [Player](/documentation/objects/#player) object.
 
 Pagination is done via the `id` field.
