@@ -4,7 +4,7 @@
 
 Each player on the list is represented by a `Player` object. The following invariant holds true for any player object:
 
-- If the player is banned, they do not have any approved or submitted records on the list
+* If the player is banned, they do not have any approved or submitted records on the list
 
 Note that it is not possible to retrieve a player's demonlist score via the API. You can calculate it yourself based on the `records` list
 
@@ -29,6 +29,19 @@ When retrieving players via [`GET /players/`](/documentation/players/#get-player
 | banned      | boolean                     | Value indicating whether the player is banned |
 | nationality | [Nationality](#nationality) | The player's nationality, if set              |
 | score       | float                       | The player's stats viewer score               |
+
+## Ranked Form
+
+Same as above, but with the player's rank.
+
+| Field       | Type                        | Description                                                                                                                                                                                   |
+| ----------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id          | integer                     | The player's id                                                                                                                                                                               |
+| name        | string                      | The player's name                                                                                                                                                                             |
+| banned      | boolean                     | Value indicating whether the player is banned                                                                                                                                                 |
+| score       | float                       | The player's stats viewer score                                                                                                                                                               |
+| nationality | [Nationality](#nationality) | The player's nationality, if set                                                                                                                                                              |
+| rank        | integer                     | The player's rank. Multiple players can have the same rank, if they have the same score. The ranking is not dense, meaning multiple player having the same rank causes a hole in the ranking. |
 
 ## Full Form
 
@@ -70,6 +83,22 @@ The listed record objects do not contain the current player embedded into the `p
     "country_code": "AD"
   },
   "score": 0
+}
+```
+
+### Ranked Form
+
+```json
+{
+  "id": 4,
+  "name": "Pennutoh",
+  "banned": false,
+  "nationality": {
+    "nation": "Andorra",
+    "country_code": "AD"
+  },
+  "score": 0,
+  "rank": 1
 }
 ```
 
