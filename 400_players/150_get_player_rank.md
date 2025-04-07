@@ -4,7 +4,7 @@
 
 ## `GET`{.verb} `/players/ranking/` `player_id`{.param} `/`
 
-Retrieves detailed information about the player with id `player_id`
+Retrieves detailed information about the player with id `player_id`, including the player's rank
 
 ### Request:
 
